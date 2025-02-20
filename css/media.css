@@ -368,6 +368,18 @@
   .contacts-subtitle {
     text-align: center;
   }
+
+  .swiper-slide-1 {
+    background: url(../img/banners/swiper1sm.png) no-repeat center / cover;
+  }
+  
+  .swiper-slide-2 {
+    background: url(../img/banners/swiper2sm.png) no-repeat center / cover;
+  }
+  
+  .swiper-slide-3 {
+    background: url(../img/banners/swiper3sm.png) no-repeat center / cover;
+  }
 }
 
 @media (max-width: 414px) {

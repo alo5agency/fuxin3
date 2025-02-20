@@ -1,5 +1,4 @@
 @import "font.css";
-@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css");
 
 :root {
   --backgroundDark: #152c39;
@@ -248,26 +247,12 @@ h3 {
   transition: all 200ms linear;
 }
 
-.nav__list-item a:hover:after {
-  height: 4px;
-  opacity: 1;
-  left: 0;
-  width: 100%;
-}
-
 .nav__list-item a:hover {
   color: rgba(255, 255, 255, 1);
 }
 
 .nav__list-item.active-nav a {
   color: rgba(255, 255, 255, 1);
-}
-
-.nav__list-item.active-nav a:after {
-  height: 4px;
-  opacity: 1;
-  left: 0;
-  width: 100%;
 }
 
 body.nav-active .nav__content {
@@ -546,7 +531,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 .swiper-slide-2 {
   width: 100%;
   height: 270px;
-  background: url(../img/banners/swiper1.png) no-repeat center / cover;
+  background: url(../img/banners/swiper2.png) no-repeat center / cover;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -557,7 +542,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 .swiper-slide-3 {
   width: 100%;
   height: 270px;
-  background: url(../img/banners/swiper1.png) no-repeat center / cover;
+  background: url(../img/banners/swiper3.png) no-repeat center / cover;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -582,6 +567,10 @@ body.nav-active .nav__list-item:nth-child(10) {
   border-radius: 10px;
   width: 50px;
   background: #000;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--accent);
 }
 
 /* Swiper end */
@@ -1127,14 +1116,14 @@ body.nav-active .nav__list-item:nth-child(10) {
 }
 
 .aboutPage-right-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .aboutPage-blocks {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
-  gap: 50px 220px;
+  gap: 40px 170px;
 }
 
 .aboutPage-block {
@@ -1269,3 +1258,105 @@ body.nav-active .nav__list-item:nth-child(10) {
 }
 
 /* portfolio end */
+
+/* modal start */
+
+.modal {
+  position: relative;
+  z-index: 999;
+}
+
+.modal__container {
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  background: #141414;
+}
+
+.modal__title {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 10px 0 20px;
+}
+
+.modal__close {
+  opacity: 0.6;
+  -webkit-transition: 0.5 0.6s;
+  -o-transition: 0.5 0.6s;
+  transition: 0.5 0.6s;
+  position: relative;
+  top: -5px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.modal__close:hover {
+  opacity: 1;
+}
+
+.modal__footer {
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* modal form */
+
+form input,
+form textarea {
+  width: 100%;
+  margin: 5px 0 10px;
+  padding: 12px 14px 7px;
+  border: none;
+  font-family: "Play";
+  outline: none;
+  background: none;
+  border-bottom: 2px solid #2b2b2b;
+  color: #E42652;
+  border-radius: 5px;
+  font-weight: normal;
+}
+
+form input::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder {
+  color: #d1d1e3;
+}
+
+form input::-moz-placeholder,
+form textarea::-moz-placeholder {
+  color: #d1d1e3;
+}
+
+form input:-ms-input-placeholder,
+form textarea:-ms-input-placeholder {
+  color: #d1d1e3;
+}
+
+form input::-ms-input-placeholder,
+form textarea::-ms-input-placeholder {
+  color: #d1d1e3;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #d1d1e3;
+}
+
+.button {
+  background: #2b2b2b;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* modal */
