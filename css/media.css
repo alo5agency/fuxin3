@@ -213,6 +213,10 @@
   .nav-but-wrap {
     padding: 0;
   }
+
+  h1 {
+    font-size: 34px;
+  }
 }
 
 @media (max-width: 684px) {
@@ -283,7 +287,7 @@
   }
 
   .page-links {
-    padding: 20px 0;
+    padding: 120px 0 30px;
   }
 
   .aboutPage-subtitle {
@@ -416,6 +420,10 @@
   .aboutPage-blocks,
   .contact-blocks {
     gap: 30px 20px;
+  }
+
+  h1 {
+    font-size: 32px;
   }
 }
 

@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo/mainLogo.svg" type="image/x-icon">
     <title>FU-XIN - цинкование металлоконструкций</title>
-    <link rel="stylesheet" href="libs/micromodal/micromodal.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -44,13 +42,15 @@
     </header>
 
     <main class="main">
-        <section class="banner-swiper">
+        <section class="video-banner">
+            <video autoplay loop src="videos/fuxin (online-video-cutter.com).mp4"></video>
+            <h1 class="video-banner-title">Горячее цинкования <br>
+                Эффективность и долговечность</h1>
+        </section>
+        <!-- <section class="banner-swiper">
             <div class="container">
-                <!-- Slider main container -->
                 <div class="swiper">
-                    <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                        <!-- Slides -->
                         <div class="swiper-slide">
                             <div class="swiper-slide-1">
                                 <div class="swiper-slide-pins pins">
@@ -59,9 +59,6 @@
                                 </div>
                                 <div class="swiper-slide-text">
                                     <h2 class="swiper-slide-title">Заказать цинкование</h2>
-                                    <!-- <p class="swiper-slide-txt">
-                                        Скидка 10% для новых клиентов при заказе
-                                    </p> -->
                                 </div>
                                 <a data-custom-open="modal" href="#!" class="swiper-slide-btn btn">Заказать</a>
                             </div>
@@ -74,9 +71,6 @@
                                 </div>
                                 <div class="swiper-slide-text">
                                     <h2 class="swiper-slide-title">Заказать цинкование</h2>
-                                    <!-- <p class="swiper-slide-txt">
-                                        Скидка 10% для новых клиентов при заказе
-                                    </p> -->
                                 </div>
                                 <a data-custom-open="modal" href="#!" class="swiper-slide-btn btn">Заказать</a>
                             </div>
@@ -89,25 +83,17 @@
                                 </div>
                                 <div class="swiper-slide-text">
                                     <h2 class="swiper-slide-title">Заказать цинкование</h2>
-                                    <!-- <p class="swiper-slide-txt">
-                                        Скидка 15% для новых клиентов при заказе
-                                    </p> -->
                                 </div>
                                 <a data-custom-open="modal" href="#!" class="swiper-slide-btn btn">Заказать</a>
                             </div>
                         </div>
                     </div>
-                    <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
-
-                    <!-- If we need navigation buttons -->
-                    <!-- <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div> -->
                     <div class="swiper-button-left"></div>
                     <div class="swiper-button-right"></div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="serviceMain">
             <div class="container">
                 <h1 class="serviceMain-title">Защита металла методом горячего цинкования</h1>
@@ -213,9 +199,9 @@
         <section class="portfolio">
             <div class="portfolio-blocks">
                 <div class="portfolio-block b1">
-                    <h2 class="portfolio-title">
+                    <a href="pages/portfolio.html" class="portfolio-title">
                         Каталог
-                    </h2>
+                    </a>
                     <p class="portfolio-txt">
                         Каждый проект демонстрирует высокое качество выполнения работы, надежность покрытия и
                         устойчивость к внешним воздействиям.
@@ -270,11 +256,12 @@
                         <a href="pages/blog.html"></a>
                     </figure>
                     <figure class="snip1529">
-                        <img src="img/blog/blog2.png" alt="pr-sample21" />
-                        <div class="date"><span class="day">2024</span><span class="month">Апр</span></div>
+                        <img src="img/blog/blog4.png" alt="pr-sample23" />
+                        <div class="date"><span class="day">2021</span><span class="month">Шанхай</span></div>
                         <figcaption>
-                            <h3>Бизнес форум</h3>
-                            <p>Встреча лидеров двух стран</p>
+                            <h3>LIN QINGZHONG</h3>
+                            <p>Международная выставка в Китае
+                            </p>
                         </figcaption>
                         <div class="hover"><img src="img/icons/arrow-up-right.png" alt=""></div>
                         <a href="pages/blog.html"></a>
@@ -293,12 +280,11 @@
                         <a href="pages/blog.html"></a>
                     </figure>
                     <figure class="snip1529">
-                        <img src="img/blog/blog4" alt="pr-sample23" />
-                        <div class="date"><span class="day">2023</span><span class="month">Пекин</span></div>
+                        <img src="img/blog/blog2.png" alt="pr-sample21" />
+                        <div class="date"><span class="day">2024</span><span class="month">Апр</span></div>
                         <figcaption>
-                            <h3>В Китае</h3>
-                            <p>Встреча Ширин с мировым актером Джеки Чан
-                            </p>
+                            <h3>Бизнес форум</h3>
+                            <p>Встреча лидеров двух стран</p>
                         </figcaption>
                         <div class="hover"><img src="img/icons/arrow-up-right.png" alt=""></div>
                         <a href="pages/blog.html"></a>
@@ -340,27 +326,13 @@
         </div>
     </footer>
 
-    <div class="modal micromodal-slide" id="modal">
-        <div class="modal__overlay" data-custom-close>
-            <div class="modal__container">
-                <header class="modal__header">
-                    <h2 class="modal__title">Оставить заявку</h2>
-                    <button class="modal__close" title="Закрыть" data-custom-close></button>
-                </header>
-
-                <form id="form-modal">
-                    <input type="text" name="name" placeholder="Имя...">
-                    <input type="text" name="phone" placeholder="Телефон номер...">
-                    <div class="modal__footer">
-                        <button class="button">Отправить</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+    <div id="pre-loader">
+        <div id="loader-logo"></div>
+        <div id="loader-circle"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
     </div>
 
-    <script src="libs/micromodal/micromodal.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="libs/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
 </body>
